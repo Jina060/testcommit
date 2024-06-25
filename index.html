@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Youtube Clone</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./styles/styles.css">
+</head>
+
+<body>
+  <nav class="top-navbar">
+    <div class="toggle-btn" onclick="show()">
+      <button class="menu">
+        <iconify-icon icon="basil:menu-outline" width="2.1em"></iconify-icon>
+      </button>
+    </div>
+
+    <div class="yt-logo" title="YouTube Home">
+      <iconify-icon icon="logos:youtube" width="5.6em"></iconify-icon>
+    </div>
+
+    <div class="search-section">
+      <input type="text" class="search-bar" placeholder="Search">
+      <button class="search-btn" title="Search"><iconify-icon icon="carbon:search"
+          height="20px"></iconify-icon></button>
+    </div>
+
+    <div class="voice-search" title="Search with your voice">
+      <button class="voice-btn">
+        <iconify-icon icon="icon-park-solid:voice" width="1.5em"></iconify-icon>
+      </button>
+    </div>
+
+    <div class="options">
+
+      <div class="settings-btn" title="Settings">
+        <button class="settings">
+          <iconify-icon icon="pepicons-pencil:dots-y" width="1.7em"></iconify-icon>
+        </button>
+      </div>
+
+      <button class="sign-in-btn">
+        <div class="Sign-in">
+          <div class="profile-icon"><iconify-icon icon="iconoir:profile-circle" width="1.8em"></iconify-icon></div>
+          <div class="sign-in-label">
+            <p>Sign in</p>
+          </div>
+        </div>
+      </button>
+    </div>
+  </nav>
+
+  <div class="side-bar">
+    <div class="contents">
+      <ul>
+
+        <li><a href="*/" class="sidebar-options" target="_blank">
+            <div class="menu-icon"><iconify-icon icon="material-symbols:home" width="1.4em"></iconify-icon></div>
+            <span>Home</span>
+          </a></li>
+
+        <li><a href="*/" class="sidebar-options" target="_blank">
+            <div class="menu-icon"><iconify-icon icon="bxs:videos" width="1.4em"></iconify-icon></div>
+            <span>Shorts</span>
+          </a></li>
+
+        <li><a href="*/" class="sidebar-options" target="_blank">
+            <div class="menu-icon"><iconify-icon icon="material-symbols:subscriptions-outline-sharp"
+                width="1.4em"></iconify-icon></div>
+            <span>Subscriptions</span>
+          </a></li>
+
+        <li><a href="*/" class="sidebar-options" target="_blank">
+            <div class="menu-icon"><iconify-icon icon="material-symbols:library-add-sharp" width="1.4em"></iconify-icon>
+            </div>
+            <span>Libary</span>
+          </a></li>
+      </ul>
+    </div>
+  </div>
+
+  
+
+  <div class="filter-bar">
+    <button class="filter-active">All</button>
+    <button class="filter-options">Music</button>
+    <button class="filter-options">Rythym & Blues</button>
+    <button class="filter-options">Burna Boy</button>
+    <button class="filter-options">Mixes</button>
+    <button class="filter-options">Highlight films</button>
+    <button class="filter-options">Sports leagues</button>
+    <button class="filter-options">Ariana Grande</button>
+    <button class="filter-options">Live</button>
+    <button class="filter-options">Blind auditions</button>
+    <button class="filter-options">Selena Gomez</button>
+    </ul>
+  </div>
+
+  <div class="video-container" id="video-container">
+     <!-- <div class="videos"> 
+        <a href="viewVideo.html" class="video-link"><img src="assets\family.jpeg" class="demo-vid" height="2em"></a>
+        <div class="content">
+          <img src="assets\yt-demo-pic.JPG" class="demo-icon" alt="html Tutorials">
+          <div class="information">
+            <a href="viewVideo.html" class="video-link"><h4 class="title">How to create youtube clone
+            </h4></a>
+            <p class="account-name">Coders Hub</p>
+            <p class="views"><span>12k</span> views . <span>3</span> years</p>
+          </div>
+        </div>
+      </div>  -->
+    </div> 
+
+    <div class="slide-out-bar" id="slider">
+
+        <div class="menu-logo">
+          <div class="icon-block" onclick="hide()">
+            <button class="toggle" >
+              <iconify-icon icon="basil:menu-outline" width="2.1em"></iconify-icon>
+            </button>
+          </div>
+          <div class="icon-name">
+            <iconify-icon icon="logos:youtube" width="5.7em"></iconify-icon>
+          </div>
+        </div>
+
+        <div class="slide-out-first">
+  
+         
+        <li><a class="slide-out-options">
+          <div class="slide-box">
+            <div class="slide-out-icon">
+              <iconify-icon icon="material-symbols:home" width="1.5em"></iconify-icon>
+            </div>
+            <div class="slide-out-content">
+              <p>Home</p>
+            </div>
+          </div>
+          </a>
+        </li>
+    
+        <li><a class="slide-out-options">
+          <div class="slide-box">
+            <div class="slide-out-icon">
+              <iconify-icon icon="bxs:videos" width="1.5em"></iconify-icon>
+            </div>
+            <div class="slide-out-content">
+              <p>Shorts</p>
+            </div>
+          </div>
+          </a>
+        </li>
+    
+        <li><a class="slide-out-options">
+          <div class="slide-box">
+            <div class="slide-out-icon">
+              <iconify-icon icon="material-symbols:subscriptions-outline-sharp" width="1.5em"></iconify-icon>
+            </div>
+            <div class="slide-out-content">
+              <p>Subscriptions</p>
+            </div>
+          </div>
+          </a>
+        </li>
+
+        <div class="line">
+        <hr>
+        </div>   
+         
+        <li><a class="slide-out-options">
+          <div class="slide-box">
+            <div class="slide-out-icon">
+              <iconify-icon icon="material-symbols:library-add-sharp" width="1.5em"></iconify-icon>
+            </div>
+            <div class="slide-out-content">
+              <p>Library</p>
+            </div>
+          </div>
+          </a>
+        </li>
+    
+        <li><a class="slide-out-options">
+          <div class="slide-box">
+            <div class="slide-out-icon">
+              <iconify-icon icon="material-symbols:home" width="1.5em"></iconify-icon>
+            </div>
+            <div class="slide-out-content">
+              <p>History</p>
+            </div>
+          </div>
+          </a>
+        </li>
+      
+        <li><a class="slide-out-options">
+          <div class="slide-box">
+            <div class="slide-out-icon">
+              <iconify-icon icon="material-symbols:home" width="1.5em"></iconify-icon>
+            </div>
+            <div class="slide-out-content">
+              <p>Your videos</p>
+            </div>
+          </div>
+          </a>
+        </li>
+     
+        <li><a class="slide-out-options">
+          <div class="slide-box">
+            <div class="slide-out-icon">
+              <iconify-icon icon="material-symbols:home" width="1.5em"></iconify-icon>
+            </div>
+            <div class="slide-out-content">
+              <p>Watch later</p>
+            </div>
+          </div>
+          </a>
+        </li>
+     
+        <li><a class="slide-out-options">
+          <div class="slide-box">
+            <div class="slide-out-icon">
+              <iconify-icon icon="material-symbols:home" width="1.5em"></iconify-icon>
+            </div>
+            <div class="slide-out-content">
+              <p>Downloads</p>
+            </div>
+          </div>
+          </a>
+        </li>
+      
+        <li><a class="slide-out-options">
+          <div class="slide-box">
+            <div class="slide-out-icon">
+              <iconify-icon icon="material-symbols:home" width="1.5em"></iconify-icon>
+            </div>
+            <div class="slide-out-content">
+              <p>Liked videos</p>
+            </div>
+          </div>
+          </a>
+        </li>
+      
+  
+      </div>
+    </div>
+</body>
+
+
+
+<script src="js\javascript.js" type="text/javascript"></script>
+<script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+</html>
